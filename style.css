@@ -1,0 +1,21 @@
+body {
+  padding-top: 10px;
+}
+
+#logo {
+  max-width: 60%;
+}
+
+#sh1 {
+  color: orange;
+}
+
+#sh2 {
+  font-style: italic;
+}
+
+button {
+  border-radius: 12px;
+  background-color: #B8CFFF;
+  border: 2px solid;
+}
