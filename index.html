@@ -48,9 +48,9 @@
           </div>
           <div class="row">
             <div class="col-12 text-end">
-              <button class="d-inline" id="icon">-</button>
-              <p class="d-inline">0</p>
-              <button class="d-inline" id="icon">+</button>
+              <button class="d-inline" id="icon" onclick="adjustValue('mac', false)">-</button>
+              <p class="d-inline" id="macQuantity">0</p>
+              <button class="d-inline" id="icon" onclick="adjustValue('mac', true)">+</button>
             </div>
           </div>
         </div>
@@ -77,9 +77,9 @@
           </div>
           <div class="row">
             <div class="col-12 text-end">
-              <button class="d-inline" id="icon">-</button>
-              <p class="d-inline">0</p>
-              <button class="d-inline" id="icon">+</button>
+              <button class="d-inline" id="icon" onclick="adjustValue('pasta', false)">-</button>
+              <p class="d-inline" id="pastaQuantity">0</p>
+              <button class="d-inline" id="icon" onclick="adjustValue('pasta', true)">+</button>
             </div>
           </div>
         </div>
@@ -106,9 +106,9 @@
           </div>
           <div class="row">
             <div class="col-12 text-end">
-              <button class="d-inline" id="icon">-</button>
-              <p class="d-inline">0</p>
-              <button class="d-inline" id="icon">+</button>
+              <button class="d-inline" id="icon" onclick="adjustValue('tacos', false)">-</button>
+              <p class="d-inline" id="tacosQuantity">0</p>
+              <button class="d-inline" id="icon" onclick="adjustValue('tacos', true)">+</button>
             </div>
           </div>
         </div>
@@ -135,9 +135,9 @@
           </div>
           <div class="row">
             <div class="col-12 text-end">
-              <button class="d-inline" id="icon">-</button>
-              <p class="d-inline">0</p>
-              <button class="d-inline" id="icon">+</button>
+              <button class="d-inline" id="icon" onclick="adjustValue('enchilada', false)">-</button>
+              <p class="d-inline" id="enchiladaQuantity">0</p>
+              <button class="d-inline" id="icon" onclick="adjustValue('enchilada', true)">+</button>
             </div>
           </div>
         </div>
@@ -147,11 +147,11 @@
     <div class="p-4">
       <div class="row">
         <div class="col-4 text-start">
-          <p class="d-inline text-start">Subtotal $15</p>
+          <p class="d-inline text-start" id="subtotal">Subtotal $0</p>
         </div>
         <div class="col-8 text-end">
           <button class="d-inline" id="order">Order</button>
-        <button class="d-inline" id="clear">Clear all</button>
+        <button class="d-inline" id="clear" onclick="clearAll()">Clear all</button>
         </div>
       </div>
     </div>
