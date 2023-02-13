@@ -49,3 +49,19 @@ function updateSubtotal() {
     }
     document.getElementById("subtotal").innerHTML = "Subtotal $" + total;
 }
+
+function order() {
+    let totalItems = 0;
+    let itemList = "";
+    for (let key in quantity) {
+        totalItems += quantity[key];
+        if (quantity[key] > 0) {
+            itemList += "\n" + quantity[key] + " " + document.getElementById(key + "Title").innerHTML;
+        }
+    }
+    if (totalItems == 0) {
+        alert('No items in cart');
+    } else {
+        alert('Order placed!\n' + itemList);
+    }
+}
