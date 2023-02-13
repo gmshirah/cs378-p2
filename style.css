@@ -14,8 +14,26 @@ body {
   font-style: italic;
 }
 
-button {
+button#icon {
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  line-height: 0;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid;
+}
+
+button#order, button#clear {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+  height: auto;
+  line-height: normal;
   border-radius: 12px;
-  background-color: #B8CFFF;
   border: 2px solid;
+}
+
+button#order {
+  background-color: #B8CFFF;
 }
