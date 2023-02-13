@@ -14,7 +14,7 @@ body {
   font-style: italic;
 }
 
-button#icon {
+#icon {
   padding: 0px;
   width: 20px;
   height: 20px;
@@ -24,7 +24,7 @@ button#icon {
   border: 1px solid;
 }
 
-button#order, button#clear {
+#order, #clear {
   padding-left: 10px;
   padding-right: 10px;
   width: auto;
@@ -34,6 +34,6 @@ button#order, button#clear {
   border: 2px solid;
 }
 
-button#order {
+#order {
   background-color: #B8CFFF;
 }
